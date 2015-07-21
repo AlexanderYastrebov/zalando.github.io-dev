@@ -39,4 +39,20 @@ describe('LanguagesUtil', function () {
     });
   });
 
+  describe('#getAbsoluteRateMetadata method', function () {
+    it('should return the absolute rate of a language providing a sets of languages for calculating max and min values', function () {
+      let languages = [
+        {percentage: 70},
+        {percentage: 40},
+        {percentage: 30},
+        {percentage: 20}
+      ];
+
+      // formula:
+      expect(languagesUtil.getAbsoluteRateMetadata({percentage: 20}, languages)).to.be.equal(0);
+      expect(languagesUtil.getAbsoluteRateMetadata({percentage: 70}, languages)).to.be.equal(100);
+      expect(languagesUtil.getAbsoluteRateMetadata({percentage: 45}, languages)).to.be.equal(50);
+    });
+  });
+
 });

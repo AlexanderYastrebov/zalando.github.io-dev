@@ -1,0 +1,67 @@
+$bar-chart-bar-height: 28px;
+
+.bar-chart {
+  display: block;
+  max-width: 680px;
+  margin:0 auto;
+  @include clearfix();
+}
+
+.bar-chart-row {
+  @include clearfix();
+}
+
+.bar-chart-bar-col, .bar-chart-label-col {
+  float:left;
+}
+
+.bar-chart-label-col {
+  width: 12%;
+}
+
+.bar-chart-bar-col {
+  width: 88%;
+}
+
+.bar-chart-row {
+  padding: 10px;
+}
+
+.bar-chart-bar {
+  background-color: steelblue;
+  height: $bar-chart-bar-height;
+  line-height:$bar-chart-bar-height;
+  text-align: right;
+  color:#fff;
+}
+
+.bar-chart-bar-percentage {
+  padding-right: 4px;
+}
+
+.bar-chart-label {
+  height: $bar-chart-bar-height;
+  line-height: $bar-chart-bar-height;
+  text-align: left;
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .bar-chart-label-col {
+    width: 15%;
+  }
+
+  .bar-chart-bar-col {
+    width: 85%;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .bar-chart-label-col {
+    width: 22%;
+  }
+
+  .bar-chart-bar-col {
+    width: 78%;
+  }
+}

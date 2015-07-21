@@ -12,6 +12,9 @@ let languages = [];
 let topLanguages = [];
 
 let LanguageStore = assign({}, BaseStoreMixin, {
+  getMostUsedLanguages: function () {
+
+  },
   getLanguages: function() {
     return languages;
   },

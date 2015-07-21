@@ -4,6 +4,7 @@ import SimpleInpagenav from 'react-simple-inpagenav';
 import AppConstants from '../constants/AppConstants.jsx';
 import Welcome from './welcome/Welcome.jsx';
 import Stats from './stats/Stats.jsx';
+import TopLanguages from './top-languages/TopLanguages.jsx';
 import FilterableRepositoryList from './repos/FilterableRepositoryList.jsx';
 
 class App extends React.Component{
@@ -26,6 +27,7 @@ class App extends React.Component{
           </SimpleInpagenav.Section>
           <SimpleInpagenav.Section target="stats">
             <Stats />
+            <TopLanguages />
           </SimpleInpagenav.Section>
           <SimpleInpagenav.Section target="repositories">
             <FilterableRepositoryList />
