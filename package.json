@@ -23,7 +23,7 @@
   "scripts": {
     "lint": "gulp lint",
     "test": "jest",
-    "ci": "gulp lint && npm test -- --reporter progress",
+    "ci": "npm run lint && npm test",
     "serve": "gulp serve"
   },
   "jest": {
