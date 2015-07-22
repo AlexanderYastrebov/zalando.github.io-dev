@@ -1,9 +1,7 @@
 language: node_js
 
 node_js:
-  - "0.12"
-  - "0.11"
-  - "iojs"
+  - "0.10.36"
 
 before_script: "gulp parameters"
 
